@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2 JS</title>
+</head>
+<body>
+    <h1>Exercícios JS</h1>
+
+    <script type="text/javascript">
+        let teste = ["Arthur", "Matheus", "Manoel", "Minerva", "Joaquim"];
+        //join
+        document.write(teste.join(" ") + "<br/>");
+        document.write(teste.join(", ") + "<br/>");
+        document.write(teste.join(" + ") + "<br/>");
+        document.write(teste.join(" and ") + "<br/>");
+        
+        document.write("<hr>");
+        let teste_2 = ["Clara", "Maria", "Barboza"];
+        
+        //concat e join
+        let familia = teste.concat(teste_2);
+        document.write(familia.join(", ") + ("<br />"));
+        document.write(familia.join("+"));
+
+        document.write("<hr>");
+
+        let variavel = [1, 2, 3, 4, 5, 6, 7, 8];
+        variavel.push(9); //adiciona um elemento no final do array
+        document.write(variavel + ("<br/>"))
+
+        variavel.pop(); //remove o último elemento do array
+        document.write(variavel + ("<br/>"))
+
+        variavel.reverse(); // imprime o array ao contrário
+        document.write(variavel + ("<br/>"));
+
+        variavel.shift(); //remmove o primeiro elemento do array
+        document.write(variavel + ("<br/>"));
+
+        const variavel_2 = variavel.slice(0, 4); //vai do índice 0 e para no índice 2
+        document.write(variavel_2 + ("<br/>"));
+
+        variavel.sort(); //ordena o array
+        document.write(variavel + ("<br/>"))
+
+        variavel.unshift(0); //adiciona um elemento no início do array
+        document.write(variavel + ("<br/>"));
+
+        const precos = [100.00, 250.00, 50.00];
+        //Executa uma ação para cada item de um array
+        precos.forEach(function(preco, indice) {
+        // O índice mostra a posição de 0 em diante.
+        document.write(`O preço na posição "${indice}" é R$${preco}.<br/>`);
+        })
+
+    </script>
+</body>
+</html>
